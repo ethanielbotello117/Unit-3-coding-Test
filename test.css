@@ -117,7 +117,7 @@ article p:nth-child(2) img{
 section.spotlight{
     background-color: var(--spotlight);
     padding-bottom: 15px;
-    overflow: auto  ;
+    overflow: auto;
 }
 
 section.spotlight h1{
@@ -169,14 +169,14 @@ footer{
     width: 100%;
 }
 
-dl dd dt{
+dl dd{
     margin-bottom: 20px;
 }
 
 nav#bottom{
     background-color: var(--nav-active);
     color: var(--text-color);
-    padding: 15px;
+    padding: 15px 15px 15px 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -202,11 +202,11 @@ footer p{
 }
 
 nav#bottom ul{
-    flex-shrink: unset;
+    flex: 0 1 150px;
 
 }
 
-/*@media(max-width: 480px){*/
+@media(max-width: 480px){
     body{
         background-color: var(--shadow);
         color: var(--text-background)
@@ -246,6 +246,41 @@ nav#bottom ul{
     background-size: cover;
 }
 
+    nav.top ul li:nth-of-type(2){
+        background-image: url(images/cw_image02.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav.top ul li:nth-of-type(3){
+        background-image: url(images/cw_image03.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav.top ul li:nth-of-type(4){
+        background-image: url(images/cw_image04.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav.top ul li:nth-of-type(5){
+        background-image: url(images/cw_image05.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    nav.top ul li:nth-of-type(6){
+        background-image: url(images/cw_image06.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     p#links{
         display: flex;
         flex-wrap: nowrap;
@@ -260,9 +295,9 @@ nav#bottom ul{
         padding: 10px 10px 10px 10px;
         border-radius: 20px;
     }
+}
 
-
-/*@media (min-width: 481px){
+@media (min-width: 481px){
     body{
         display: flex;
         flex-wrap: wrap;
@@ -294,4 +329,4 @@ nav#bottom ul{
     p#links{
         display: none;
     }
-}*/
+}
