@@ -7,69 +7,6 @@
     --text-color: rgb(111, 111, 111);;
 }
 
-html {
-    background-color: var(--html-background);
-    font-family: Verdana, 'Geneva', sans-serif;
-    font-size: 12px;
-}
-
-body{
-    background-color: white;
-    width: 100%;
-    box-shadow: var(--shadow) 10px 10px 25px, var(--shadow) -10px 10px 25px;;
-}
-
-image, #logoImage{
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-}
-
-p{
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.top{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-a{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
-    display: block;
-    font-size: 1.2rem;
-    text-align: center;
-    padding-top: 5%;
-    padding-right: 0%;
-    padding-bottom: 5%;
-    padding-left: 0%;
-}
-
-a:hover{
-    color: var(--nav-active);
-    text-shadow: 0px 0px 2px black, 0px 0px 15px white;;
-}
-
-p img{
-    float: right;
-    width: 45%;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 120px;
-    margin-left: 50px;
-}
 /* =============================================
 Base styles used by All Screens DO NOT EDIT BELOW
 ============================================= */
@@ -117,3 +54,244 @@ Base styles used by All Screens DO NOT EDIT ABOVE
 
 /* HTML and Body Styles */
 
+
+html {
+    background-color: var(--html-background);
+    font-family: Verdana, 'Geneva', sans-serif;
+    font-size: 12px;
+}
+
+body{
+    background-color: white;
+    max-width: 1024px;
+    margin: auto;
+    box-shadow: var(--shadow) 10px 10px 25px, var(--shadow) -10px 10px 25px;;
+}
+
+body header{
+    background-color: var(--html-background);
+    width: 100%;
+}
+
+img#logoImage{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav.top ul{
+    margin: 10px 10px 10px 10px;
+}
+
+nav.top ul a{
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5% 0% 5% 0%;
+}
+
+nav.top ul a:hover{
+    color: var(--nav-active);
+    text-shadow: 0px 0px 2px black, 0px 0px 15px white;;
+}
+
+article p:nth-child(2) img{
+    float: right;
+    width: 45%;
+    margin: 0px 0px 120px 50px;
+    transform: rotate(30deg) translate(0, 60px);
+    box-shadow: var(--shadow) 10px -10px 30px;
+}
+
+section.spotlight{
+    background-color: var(--spotlight);
+    padding-bottom: 15px;
+    overflow: auto  ;
+}
+
+section.spotlight h1{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-shadow: white -2px 0px 1px, white -5px 0px 30px;
+    padding: 20px 15px 10px 0px;
+    text-align: right;
+}
+
+section.spotlight img{
+    width: 35%;
+    float: left;
+    display: block;
+    margin: 20px 20px 10px 15px;
+}
+
+section.spotlight p{
+    margin-bottom: 0;
+}
+
+aside{
+    background-color: var(--text-background);
+}
+
+aside dl a{
+    color: var(--nav-active);
+}
+
+aside h1{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.4em;
+    text-align: center;
+    margin: 20px 0px 25px 0px;
+}
+
+aside img{
+    display: block;
+    width: 30%;
+    margin: 5px auto;
+}
+
+dl{
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+}
+
+dl dd dt{
+    margin-bottom: 20px;
+}
+
+nav#bottom{
+    background-color: var(--nav-active);
+    color: var(--text-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+nav#bottom ul li{
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+nav#bottom ul li a{
+    color: white;
+}
+
+footer p{
+    color: var(--text-color);
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    padding: 10px 0px 10px 10px;
+}
+
+nav#bottom ul{
+    flex-shrink: unset;
+
+}
+
+/*@media(max-width: 480px){*/
+    body{
+        background-color: var(--shadow);
+        color: var(--text-background)
+    }
+
+    aside{
+        display: none;
+    }
+
+    article img{
+        display: none;
+    }
+
+    section.spotlight{
+        display: none;
+    }
+
+    nav.top ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    nav.top ul li{
+        font-size: 2.2rem;
+        flex: 130px 1 1;
+    }
+
+    nav.top ul li a{
+        padding: 50% 0 50% 0;
+    }
+
+    nav.top ul li:nth-of-type(1){
+    background-image: url(images/cw_image01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    p#links{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    p#links a{
+        background-color: var(--nav-active);
+        color: white;
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+    }
+
+
+/*@media (min-width: 481px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    article{
+        flex: 400px 1 2;
+    }
+
+    aside{
+        flex: 200px 1 2;
+    }
+
+    nav.top ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: var(--shadow);
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav.top ul li{
+        flex: 80px 0 1;
+    }
+
+    p#links{
+        display: none;
+    }
+}*/
